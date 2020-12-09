@@ -1,9 +1,8 @@
 var ordered_list=[]
 
 function image_pattern()
-{
+{    
     image.style.padding="15px"
-    image.onmouseup
     image.onmouseleave=change_pattern
 }
 function change_pattern()

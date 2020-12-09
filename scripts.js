@@ -10,6 +10,7 @@ function adddosaToList()
     }
     ordered_list.push(item)
     renderDOM()
+    
 }
 function addidlytolist()
 {   
@@ -171,7 +172,7 @@ function renderDOM()
         p.setAttribute('class','left')            
         p.textContent=Object.keys(item)+"  "+Object.values(item)
         var btn=document.createElement('button')
-        btn.setAttribute('class','right')        
+        btn.setAttribute('class','right remove')        
         btn.textContent="remove"
         btn.addEventListener('click',remove_item)
         div.append(p,btn)
@@ -182,6 +183,7 @@ function renderDOM()
 function remove_item()
 {
     console.log("start removing item")
+
 }
 function bill_generator()
 {
@@ -304,4 +306,5 @@ window.addEventListener('load',function()
   var generate_bill=document.getElementById('generate_button')
   generate_bill.addEventListener('click',bill_generator)
 })
+
 

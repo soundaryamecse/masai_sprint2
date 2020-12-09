@@ -14,7 +14,7 @@ input
 .flex
 {
     display: flex;
-    /*max-width: 480px;*/
+    width: 100%;
     flex-direction: column;
     min-height: 1200px;
     margin: 20px;
@@ -92,8 +92,8 @@ button
 {
     display: grid;
     grid-gap:20px;
-    max-width: 480px;
-    background-color: black;
+    background: black;
+    height:220px;
     padding-right: 30px;
     /*margin-top: 20px;
     height: 30%;*/
@@ -187,6 +187,14 @@ div>p
     grid-template-columns: auto;
     grid-template-areas: "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l";
     
+    
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+img{
+    object-fit: cover;
 }
 .grid>div
 {
@@ -277,10 +285,13 @@ div>p
 {
 .flexbox
 {
+    padding:30px;
     display:grid;
-    grid-gap:20px;
+    grid-gap:110px;
     /*margin: auto;*/
-    padding-right: 30px;
+    padding-right: 350px;
+    position: relative;
+    left:-23px;
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas: "w x y z";
